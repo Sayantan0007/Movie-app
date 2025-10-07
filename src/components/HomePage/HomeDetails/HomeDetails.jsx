@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Loader from "../../Loader/Loader";
-import "./HomeDetails.css";
+import "./homeDetails.css";
 import { useDispatch, useSelector } from "react-redux";
 import StarRating from "../../StarRating/StarRating";
 
