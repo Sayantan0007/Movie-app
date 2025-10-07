@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./starrating.css";
+import "./StarRating.css";
 import { useNavigate } from "react-router-dom";
 import ReactStars from "react-stars";
 import "font-awesome/css/font-awesome.min.css";
