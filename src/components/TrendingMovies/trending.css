@@ -1,0 +1,45 @@
+.trendy-container{
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 16px; 
+  padding: 20px;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #f9c74f #2c2c3a;
+}
+.card-trendy-container {
+  width: 350px;
+  height: 480px;
+  background: #1e1e2f;
+  border-radius: 18px;
+  color: #fff;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-trendy-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+.card-container-body img {
+  width: 100%;
+  height: 60%;
+  border-radius: 12px;
+}
+.card-container-body{
+  position: relative;
+}
+.trending-section{
+  position: absolute;
+  right: 12px;
+  bottom: 140px;
+  background-color: #e0e1dd;
+  width: 82px;
+  border-radius: 12px;
+  height: 38px;
+}
+.trending-word{
+  color: #1c1c1c;
+  padding: 7px;
+  font-weight: bold;
+}

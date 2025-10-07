@@ -1,0 +1,118 @@
+.tv-details-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+  background-color: #27374d;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.tv-details-movie-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tv-details-title-section h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f9d342;
+  margin: 0;
+  text-align: center;
+  border-bottom: 2px solid #f9d342;
+  padding-bottom: 0.5rem;
+}
+
+.tv-item-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.tv-genre-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tv-media-type {
+  background-color: #3a506b;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.tv-item-detail p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #dcdcdc;
+}
+
+.tv-detail-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tv-detail-img-container img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #415a77;
+}
+
+.tv-watch-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tv-watch-button .btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #f9d342;
+  color: #1b263b;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.tv-watch-button .btn:hover {
+  background-color: #ffe162;
+}
+
+.tv-no-teaser-message {
+  color: #ccc;
+  font-style: italic;
+}
+
+.tv-video-container {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 600px) {
+  .tv-details-title-section h4 {
+    font-size: 1.5rem;
+  }
+
+  .tv-detail-img-container img {
+    width: 100%;
+  }
+
+  .tv-watch-button .btn {
+    width: 100%;
+  }
+
+  .tv-video-container iframe {
+    height: 250px;
+  }
+}

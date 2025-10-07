@@ -1,0 +1,12 @@
+#root {
+  margin: 0 ;
+  padding: 0;
+  background:  #1b263b;
+   color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+
+}
+
+html, body {
+  overflow-x: hidden;
+}

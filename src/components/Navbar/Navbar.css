@@ -1,0 +1,97 @@
+.nav-content{
+  margin-right: 205px;
+  
+}
+.nav-link{
+  color: #f9c74f;
+}
+.navbar-brand{
+  margin-left: 160px;
+}
+.search-bar-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #1b263b;
+}
+.search-control {
+   width: 100%;
+  padding: 12px 45px 12px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #2c2c3e;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+.search-control::placeholder {
+  color: #999999;
+}
+
+.search-control:focus {
+  background-color: #353545;
+}
+.search-icon{
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #6c757d;
+  /* pointer-events: none; */
+  cursor: pointer;
+  color: #f9c74f;
+}
+
+.search-results-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #2c2c3a;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.search-result-item {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.search-result-item:hover {
+  background-color: #3d3d4a;
+}
+
+.result-thumbnail {
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.result-details {
+  color: #f1f1f1;
+}
+
+.result-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.result-year {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+

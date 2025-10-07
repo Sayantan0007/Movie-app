@@ -1,0 +1,154 @@
+.home-container {
+  padding: 40px 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* Card container for each movie */
+.slide-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; /* No card background */
+  padding: 20px;
+  margin: auto;
+   width: 100%;
+}
+
+
+
+/* Image styling */
+.img-container {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 2 / 3;      
+  max-height: 70vh;
+  margin: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  padding: 20px 0;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  border-radius: 16px;
+  background-color: #1b263b; /* Same as page */
+}
+
+.img-container img:hover {
+  transform: scale(1.03);
+}
+@media screen and (min-width: 768px) {
+  .img-container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .img-container {
+    max-width: 700px;
+  }
+}
+
+/* Optional: Title or description */
+.movie-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.slick-prev:hover::before,
+.slick-next:hover::before {
+  color: #f9c74f;
+}
+/* Default inactive dot */
+.slick-dots li button::before {
+  font-size: 12px;
+  color: #999 !important;  /* Inactive dot color */
+  opacity: 1 !important;
+}
+
+/* Active dot color */
+.slick-dots li.slick-active button::before {
+  color: #f9c74f !important;
+  opacity: 1 !important;
+}
+.movie-rating {
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.star-icon {
+  font-size: 1.2rem;
+  color: #ffd700;
+}
+
+.rating-number {
+  font-size: 1rem;
+  color: #ffd700;
+}
+.trending-container{
+  margin-top: 25px;
+}
+.header-container h3{
+  margin-left: 30px;
+  font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+  font-size: 2rem;
+  color: #f9c74f; 
+}
+/* Footer container styling */
+.style-footer {
+  overflow: hidden; /* prevent weird overflow */
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+/* Scrollable wrapper around Leaderboard */
+.footer-scroll-container {
+  overflow-x: auto;
+  padding: 10px 0;
+  max-width: 100%;
+}
+
+/* Make the movie cards row scroll horizontally */
+.footer-mode .top-movies-container {
+  flex-wrap: nowrap !important;
+  justify-content: flex-start !important;
+  width: max-content;
+  display: flex;
+  gap: 40px;
+}
+
+/* Horizontal scrollbar for all browsers */
+.footer-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.footer-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #f9c74f;
+  border-radius: 10px;
+}
+
+.footer-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.footer-scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #f9c74f transparent;
+}
