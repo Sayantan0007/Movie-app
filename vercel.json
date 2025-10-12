@@ -1,24 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "vite.config.*",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "env": {
-    "CI": "false",
-    "NODE_ENV": "production"
-  },
-  "ignoreCommand": "echo 'Skipping warnings and lint errors...'",
-  "framework": "vite"
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
